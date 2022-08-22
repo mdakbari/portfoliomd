@@ -10,7 +10,6 @@
     box-sizing: border-box;
     outline: none; border:none;
     text-decoration: none;
-    text-transform: capitalize;
     transition: all .2s linear;
     line-height: 1.5;
 }
@@ -230,7 +229,7 @@ header .follow a:hover{
 
 .about .row-1 .content p{
     color:#666;
-    font-size: 1.7rem;
+    font-size: 15px;
     padding:.5rem 0;
 }
 
@@ -239,14 +238,17 @@ header .follow a:hover{
     flex-wrap: wrap;
     gap:1.5rem;
     padding: 0.5rem 0;
+   
 }
 
 .about .row-1 .content .box-container .box{
     flex:1 1 20rem;
+
 }
 
 .about .row-1 .content .box-container .box span{
     color:var(--main-color);
+    text-transform: none;
 }
 
 .about .row-2{
@@ -414,11 +416,14 @@ header .follow a:hover{
     text-transform: uppercase;
 }
 
-
-.portfolio .box-container .box .icons a:hover{
-    background:var(--main-color);
-    color:#fff;
+.portfolio .box-container .box h3 a{
+    text-decoration: none;
+    color:#333;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
 }
+
+
 
 .contact .icons-container{
     display: flex;
@@ -437,12 +442,12 @@ header .follow a:hover{
 }
 
 .contact .icons-container .icons i{
-    height:5rem;
-    width:5rem;
-    line-height: 5rem;
-    font-size: 2rem;
-    background: var(--main-color);
+    height:6rem;
+    width:6rem;
+    line-height: 6rem;
+    font-size: 2.5rem;
     color:#fff;
+    background:var(--main-color);
     border-radius: 50%;
 }
 
@@ -525,7 +530,4 @@ header .follow a:hover{
     header{
         width:100%;
     }
-
-    
-
 }
